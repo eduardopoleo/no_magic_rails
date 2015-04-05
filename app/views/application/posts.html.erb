@@ -1,0 +1,14 @@
+All posts are listed here:
+  <% posts.each do |post| %>  
+    <a href = <%="/show_post?id=#{post.id}"%>>
+      <h2><%= post.title %></h2>
+    </a>
+    <small><%= post.author %></small>
+    <small><%= post.created_at %></small>
+    <p> Body:<%= post.body %></p>
+    <hr/>
+  <%end%>
+
+ 
+  
+  
